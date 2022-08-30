@@ -1,8 +1,10 @@
 import React from "react";
 
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
-import Login from "../pages/customer/Login";
-import Register from "../pages/customer/Register";
+// import Login from "../pages/customer/Login";
+// import Register from "../pages/customer/Register";
+import Login from "../pages/driver/Login";
+import Register from "../pages/driver/Register";
 
 const Navbar = () => {
   return (
