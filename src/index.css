@@ -11,3 +11,82 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.mb-3,
+.d-grid {
+ 
+  width: 80%;
+  background-color: cornsilk;
+}
+.sign{
+  color: blue;
+  margin-top: 100px;
+  margin-right: 430px;
+  margin-bottom: 20px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 4.031px;
+
+color: #1340DE;
+}
+.forgot-password{
+  margin-right: 400px;
+}
+.cont{
+  display: flex;
+  margin-left: 100px;
+}
+.image1{
+  height: 600px;
+}
+.form-control{
+  border: none;
+  border-radius: 20px;
+}
+.sign2{
+  color: blue;
+  margin-top: 150px;
+  margin-right: 430px;
+  margin-bottom: 20px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 900;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 4.031px;
+}
+.formcontrol{
+  width: 100%;
+  border: 1px solid blue;
+  height: 40px;
+}
+.icon {
+  padding: 10px;
+  min-width: 40px;
+
+}
+
+.link{
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+.link :hover{
+  background-color: blueviolet;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.logo{
+  float: left;
+  margin-left: 10px;
+  font-weight: bolder;
+  color: blue;
+
+}
+.links{
+  margin-left: 850px;
+}
+
