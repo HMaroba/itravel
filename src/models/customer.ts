@@ -5,5 +5,4 @@ email: string;
 location: string;
 password: string;
 confirmpassword: string;
-
 }
