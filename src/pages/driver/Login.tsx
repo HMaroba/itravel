@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Imag from "./signupImg.svg";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -9,23 +8,14 @@ const Login = () => {
     <div className="cont">
       <Form className="form1" onSubmit={handleSubmit}>
         <h3 className="sign2">Signin</h3>
-        <div className="mb-3">
-          <input
-            type="text"
-            className="formcontrol"
-            placeholder="Enter Username"
-            required
-          />
-        </div>
 
-        <div className="mb-3">
-          <input
-            type="password"
-            className="formcontrol"
-            placeholder="Enter password"
-            required
-          />
-        </div>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control type="text" placeholder="Enter Username" />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control type="text" placeholder="Enter password" />
+        </Form.Group>
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
@@ -36,7 +26,7 @@ const Login = () => {
           Not Registered <Link to={"/register"}>Sign up</Link>
         </p>
       </Form>
-      <img src={Imag} className="image1" />
+      <img src="/Assets/Images/signupimg.svg" className="image1" alt="" />
     </div>
   );
 };
