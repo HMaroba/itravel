@@ -8,23 +8,24 @@ const Login = () => {
     <div className="cont">
       <Form className="form1" onSubmit={handleSubmit}>
         <h3 className="sign2">Signin</h3>
-        <div className="mb-3">
-          <input
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
             type="text"
             className="formcontrol"
             placeholder="Enter Username"
-            required
+            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
           />
-        </div>
+        </Form.Group>
 
-        <div className="mb-3">
-          <input
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
             type="password"
             className="formcontrol"
-            placeholder="Enter password"
-            required
+            placeholder="Enter Password"
+            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
           />
-        </div>
+        </Form.Group>
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
@@ -37,6 +38,7 @@ const Login = () => {
       </Form>
       <img src="/Assets/Images/signupimg.svg" className="image1" alt="" />
     </div>
+  
   );
 };
 

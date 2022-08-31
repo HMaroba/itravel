@@ -11,15 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.mb-3,
+
 .d-grid {
  
+  width: 62%;
+  
+}
+.btn{
+  width: 97%;
+}
+.mb-3{
+  width: 60%;
+}
+.mb-31{
+  width: 96%;
+  margin-bottom: 10px;
+  
+}
+.mb3{
   width: 80%;
-  background-color: cornsilk;
+  margin-bottom: 10px;
+  border: 2px solid #2B67F6;
 }
 .sign{
-  color: blue;
-  margin-top: 100px;
+
+  margin-top: 55px;
   margin-right: 430px;
   margin-bottom: 20px;
 font-family: 'Roboto';
@@ -31,19 +47,43 @@ letter-spacing: 4.031px;
 
 color: #1340DE;
 }
+.send{
+  margin-bottom: 20px;
+  margin-top: 78px;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+/* or 150% */
+
+letter-spacing: -0.015em;
+
+color: #2B67F6;
+  
+
+
+}
 .forgot-password{
   margin-right: 400px;
 }
 .cont{
   display: flex;
   margin-left: 100px;
+  padding: 0%;
+ 
 }
 .image1{
-  height: 600px;
+  height: 470px;
+  padding-right: 30%;
+  
 }
-.form-control{
-  border: none;
-  border-radius: 20px;
+.image12{
+  margin-top: 40px;
+}
+.image123{
+  height: 600px;
+  margin-top: 50px;
 }
 .sign2{
   color: blue;
@@ -59,9 +99,36 @@ letter-spacing: 4.031px;
 }
 .formcontrol{
   width: 100%;
-  border: 1px solid blue;
   height: 40px;
+  background: #FFFFFF;
+border: 1px solid #2B67F6;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 400;
+font-size: 17.9255px;
+line-height: 21px;
+display: flex;
+align-items: flex-end;
+text-align: calc(50% - 110.58px/2 - 465.71px);
+color: #1340DE;
+
 }
+
+.formc{
+  
+  height: 40px;
+  background: #FFFFFF;
+border: 2px solid #2B67F6;
+margin-right: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+color: #2B67F6;
+letter-spacing: -0.015em;
+}
+
 .icon {
   padding: 10px;
   min-width: 40px;
@@ -84,9 +151,19 @@ letter-spacing: 4.031px;
   margin-left: 10px;
   font-weight: bolder;
   color: blue;
+  font-size: 30px;
 
 }
 .links{
   margin-left: 850px;
 }
+.form1{
+  margin-left: 159px;
+  margin-right: 0px;
+  padding-left: 0%;
+}
+.form2{
+  margin-left: 6%;
+}
+
 
