@@ -1,6 +1,5 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Imag from "./signupImg.svg";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -36,7 +35,7 @@ const Login = () => {
           Not Registered <Link to={"/register"}>Sign up</Link>
         </p>
       </Form>
-      <img src={Imag} className="image1" />
+      <img src="/Assets/Images/signupimg.svg" className="image1" alt="" />
     </div>
   );
 };

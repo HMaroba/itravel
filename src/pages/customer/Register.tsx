@@ -1,9 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Imag from "./signupImg.svg";
 import { Link } from "react-router-dom";
-
-import { customers } from "../../models/customer";
 
 const Register = () => {
   return (
@@ -64,7 +61,7 @@ const Register = () => {
           Already Registered <Link to={"/login"}>login</Link>
         </p>
       </Form>
-      <img src={Imag} className="image1" />
+      <img src="/Assets/Images/signupimg.svg" className="image1" alt="" />
 
     </div>
   );
