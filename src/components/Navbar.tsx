@@ -1,11 +1,16 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+
+// import Login from "../pages/driver/Login";
+// import Register from "../pages/driver/Register";
+
 import Login from "../pages/customer/Login";
 import Register from "../pages/customer/Register";
 import Request from "../pages/customer/Request";
 import Register2 from "../pages/driver/Register";
 import Home from "./Home";
+
 
 const Navbar = () => {
   return (
@@ -13,11 +18,22 @@ const Navbar = () => {
       <BrowserRouter>
         <h2 className="logo">Itravel</h2>
         <div className="links">
+
           <Link className="linkhome" to={"/"}>
             HOME
           </Link>
           <Link className="link" to={"/request"}>
             PRODUCT
+          </Link>
+          <Link className="link" to={"/driver-login"}>
+            Driver Login
+          </Link>
+          <Link className="link" to={"/request"}>
+            About
+          </Link>
+
+          <Link className="link" to={"/login"}>
+            Login Here
           </Link>
 
           <Link className="link" to={"/register"}>
@@ -30,14 +46,19 @@ const Navbar = () => {
           <Link className="link1" to={"/register"}>
             <span className="span1">Sign up</span>
           </Link>
+          <Link className="link" to={"/payment"}>
+            Payments
+          </Link>
         </div>
 
         <Routes>
           <Route path="/login" element={<Login />} />{" "}
+
           <Route path="/register" element={<Register/>} />{" "}
           <Route path="/driver" element={<Register2 />} />{" "}
           <Route path="/request" element={<Request />} />{" "}
           <Route path="/" element={<Home />} />{" "}
+
         </Routes>
       </BrowserRouter>
     </div>

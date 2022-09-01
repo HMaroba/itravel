@@ -1,59 +1,68 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import Imag from "./signupImg.svg";
 import { Link } from "react-router-dom";
-
-import { drivers } from "../../models/driver";
 
 const Register = () => {
   return (
     <div className="cont">
-      <Form className="form1">
+      <Form className="form4">
         <h3 className="sign">Signup</h3>
-        <div className="mb-3">
-          <input
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
             type="text"
-            className="formcontrol"
             placeholder="Enter Username"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
-        </div>
+        </Form.Group>
 
-        <div className="mb-3">
-          <input
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
             type="number"
-            className="formcontrol"
             placeholder="Enter Contact Number"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
-        </div>
+        </Form.Group>
 
-        <div className="mb-3">
-          <input
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
             type="email"
-            className="formcontrol"
             placeholder="Enter email"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
-        </div>
-        <div className="mb-3">
-          <input
-            type="password"
-            className="formcontrol"
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
+            type="text"
             placeholder="Enter Location"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
-        </div>
-        <div className="mb-3">
-          <input
-            type="password"
-            className="formcontrol"
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
+            type="text"
             placeholder="Enter license number"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
-        </div>
-        <div className="mb-3">
-          <input
-            type="password"
-            className="formcontrol"
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
+            type="text"
             placeholder="Enter password"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
-        </div>
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+          <Form.Control
+            type="text"
+            placeholder="Confirm password"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
+          />
+        </Form.Group>
 
         <div className="d-grid">
           <button type="submit" className="btn btn-primary">
@@ -64,7 +73,7 @@ const Register = () => {
           Already Registered <Link to={"/login"}>login</Link>
         </p>
       </Form>
-      <img src={Imag} className="image1" />
+      <img src="/Assets/Images/signupimg.svg" className="image123" alt="" />
     </div>
   );
 };
