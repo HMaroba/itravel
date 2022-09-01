@@ -103,6 +103,9 @@ const Register = () => {
         <p className="forgot-password text-right">
           Already Registered <Link to={"/login"}>login</Link>
         </p>
+        <p className="forgot-password text-right">
+          Register as <Link to={"/driver"}>Driver</Link>
+        </p>
         {error}
       </Form>
       <img src="/Assets/Images/signupimg.svg" className="image123" alt="" />

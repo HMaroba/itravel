@@ -61,7 +61,9 @@ const Customermain = () => {
   );
 };
 const Map = () => {
-  return <>Map</>;
+  return <>
+     <iframe style={{width: "800px", height: "400px", borderRadius: "20px"}}src="https://maps.google.com/maps?q=Maseru%20lesotho&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" ></iframe>
+  </>;
 };
 
 const DriversCard = () => {
@@ -78,9 +80,7 @@ const DriversCard = () => {
             <Flex>
               <Button>Connect</Button>
               <Button>Profile</Button>
-              <Button
-               
-              >Log Out</Button>
+              
             </Flex>
           </Stack>
         </Stack>

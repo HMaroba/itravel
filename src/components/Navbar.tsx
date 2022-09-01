@@ -9,6 +9,7 @@ import Customermain from "../pages/customer/Customermain";
 import Login from "../pages/customer/Login";
 import Register from "../pages/customer/Register";
 import Request from "../pages/customer/Request";
+import Drivermain from "../pages/driver/drivermain";
 import Register2 from "../pages/driver/Register";
 import Home from "./Home";
 
@@ -26,7 +27,7 @@ const Navbar = () => {
           <Link className="link" to={"/request"}>
             PRODUCT
           </Link>
-          <Link className="link" to={"/register"}>
+          <Link className="link" to={"/customermain"}>
             ABOUT US
           </Link>
 
@@ -44,8 +45,9 @@ const Navbar = () => {
           <Route path="/register" element={<Register/>} />{" "}
           <Route path="/driver" element={<Register2 />} />{" "}
           <Route path="/request" element={<Request />} />{" "}
-          <Route path="/" element={<Home />} />{" "}
+          <Route path="/" element={<Home/>} />{" "}
           <Route path="/customermain" element={<Customermain/>} />{" "}
+          <Route path="/drivermain" element={<Drivermain/>} />{" "}
 
         </Routes>
       </BrowserRouter>
