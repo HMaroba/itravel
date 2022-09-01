@@ -85,6 +85,18 @@ color: #2B67F6;
   height: 600px;
   margin-top: 50px;
 }
+.image2{
+  
+width: 800px;
+margin-top: 70px;
+height: 400px;
+
+}
+.image4{
+  height: 45px;
+  margin-right: 10px;
+  float: left;
+}
 .sign2{
   color: blue;
   margin-top: 150px;
@@ -142,20 +154,60 @@ letter-spacing: -0.015em;
   font-size: 20px;
   
 }
-.link :hover{
-  background-color: blueviolet;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+.linkhome{
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2B67F6;
+  font-size: 20px;
+}
+.link1{
+  margin-right: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 2px solid;
+  border: 2px solid #2B67F6;
+  width: 50%;
+  background-color: #2B67F6;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  
+}
+.link1:hover{
+  color: white;
+}
+.link2{
+  margin-left: 300px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: blue;
+  font-size: 20px;
+  border: 2px solid #2B67F6;
+  width: 50%;
+  border-radius: 5px;
 }
 .logo{
   float: left;
-  margin-left: 10px;
+  margin-left: 20px;
   font-weight: bolder;
   color: blue;
   font-size: 30px;
 
 }
+.logo1{
+  float: left;
+  margin-left: 10px;
+  font-weight: bolder;
+  margin-top: 200px;
+  margin-right: 250px;
+  color: blue;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
 .links{
-  margin-left: 850px;
+  margin-left: 500px;
+  margin-top: 20px;
 }
 .form1{
   margin-left: 159px;
@@ -165,5 +217,53 @@ letter-spacing: -0.015em;
 .form2{
   margin-left: 6%;
 }
+.slogan{
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 40px;
+
+color: #2B67F6;
+}
+.start{
+  margin-top: 30px;
+  font-family: 'Rounded Mplus 1c Bold';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 30px;
+border: 1px solid blue;
+border-radius: 10px;
+color: #2B67F6;
+}
+.start1{
+  margin-left: 20px;
+}
+.head{
+  margin-bottom: 40px;
+}
+.blog{
+  margin-right: 5px;
+  
+background: #2B67F6;
+border-radius: 20px;
+  position: relative;
+width: 28px;
+height: 114px;
+}
+.signbtn{
+  width: 15%;
+  height: 35px;
+ 
+}
+.span1{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
 
 

@@ -2,7 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { InputGroup } from "react-bootstrap";
-import { Link } from "react-router-dom";
+
 const Request = () => {
   return (
     <div>
@@ -38,8 +38,8 @@ const Request = () => {
             <Form.Control
               className="formc"
               aria-label="Last name"
-              type="text"
-              placeholder="Home pick time"
+              type="time"
+              value ="Home pick time"
               style={{color: " #1340DE",border: "1px solid #2B67F6"}}
             />
           </InputGroup>
