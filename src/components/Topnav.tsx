@@ -61,6 +61,7 @@ const Topnav = () => {
         </HStack>
 
         <HStack spacing="2rem">
+          {/*
           <Link>
             <HiOutlineChatAlt fontSize="30px" color="#2B67F6" />
           </Link>
@@ -70,6 +71,7 @@ const Topnav = () => {
           <Link>
             <HiOutlineHeart fontSize="30px" color="#2B67F6" />
           </Link>
+            */}
         </HStack>
 
         <HStack>

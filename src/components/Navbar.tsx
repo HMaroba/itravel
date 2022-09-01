@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import Customermain from "../pages/customer/Customermain";
 
 // import Login from "../pages/driver/Login";
 // import Register from "../pages/driver/Register";
@@ -25,17 +26,6 @@ const Navbar = () => {
           <Link className="link" to={"/request"}>
             PRODUCT
           </Link>
-          <Link className="link" to={"/driver-login"}>
-            Driver Login
-          </Link>
-          <Link className="link" to={"/request"}>
-            About
-          </Link>
-
-          <Link className="link" to={"/login"}>
-            Login Here
-          </Link>
-
           <Link className="link" to={"/register"}>
             ABOUT US
           </Link>
@@ -46,9 +36,6 @@ const Navbar = () => {
           <Link className="link1" to={"/register"}>
             <span className="span1">Sign up</span>
           </Link>
-          <Link className="link" to={"/payment"}>
-            Payments
-          </Link>
         </div>
 
         <Routes>
@@ -58,6 +45,7 @@ const Navbar = () => {
           <Route path="/driver" element={<Register2 />} />{" "}
           <Route path="/request" element={<Request />} />{" "}
           <Route path="/" element={<Home />} />{" "}
+          <Route path="/customermain" element={<Customermain/>} />{" "}
 
         </Routes>
       </BrowserRouter>

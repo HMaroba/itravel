@@ -1,47 +1,18 @@
 import React,{useState} from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const auth = getAuth();
+  
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const signIn = async () => {
-    try {
-        await signInWithEmailAndPassword(auth, email, password);
-        navigate("/");
-    } catch (error) {
-        console.log(error);
-    }
-};
 
-onAuthStateChanged(auth, (currentUser) => {
-    if (currentUser) {
-        navigate("/");
-    }
-});
-const [authing, setAuthing] = useState(false);
-
-const signInWithGoogle = async () => {
-    setAuthing(true);
-
-    signInWithPopup(auth, new GoogleAuthProvider())
-        .then((response) => {
-            console.log(response.user.uid);
-            navigate('/');
-        })
-        .catch((error) => {
-            console.log(error);
-            setAuthing(false);
-        });
-};
   return (
     <div className="cont">
-      <Form className="form1" onSubmit={signIn}>
+      <Form className="form1">
         <h3 className="sign2">Signin</h3>
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -71,9 +42,7 @@ const signInWithGoogle = async () => {
             Login
           </button>
         </div>
-        <button onClick={() => signInWithGoogle()} disabled={authing}>
-                Sign in with Google
-            </button>
+     
         <p className="forgot-password text-right">
           Not Registered <Link to={"/register"}>Sign up</Link>
         </p>

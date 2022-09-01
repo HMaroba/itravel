@@ -14,8 +14,8 @@ import {
 import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Topnav from "../../components/Topnav";
-
 const Customermain = () => {
+  
   return (
     <>
       <Topnav />
@@ -65,6 +65,7 @@ const Map = () => {
 };
 
 const DriversCard = () => {
+
   return (
     <>
       <HStack>
@@ -77,6 +78,9 @@ const DriversCard = () => {
             <Flex>
               <Button>Connect</Button>
               <Button>Profile</Button>
+              <Button
+               
+              >Log Out</Button>
             </Flex>
           </Stack>
         </Stack>
