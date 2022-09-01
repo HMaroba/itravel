@@ -1,7 +1,6 @@
 import {
   Menu,
   MenuButton,
-  MenuDivider,
   MenuItemOption,
   MenuList,
   MenuOptionGroup,
