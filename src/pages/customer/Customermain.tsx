@@ -15,8 +15,8 @@ import {
 import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Topnav from "../../components/Topnav";
-
 const Customermain = () => {
+  
   return (
     <>
       <Topnav />
@@ -62,10 +62,13 @@ const Customermain = () => {
   );
 };
 const Map = () => {
-  return <>Map</>;
+  return <>
+     <iframe style={{width: "800px", height: "400px", borderRadius: "20px"}}src="https://maps.google.com/maps?q=Maseru%20lesotho&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0" scrolling="no" ></iframe>
+  </>;
 };
 
 const DriversCard = () => {
+
   return (
     <>
       <HStack

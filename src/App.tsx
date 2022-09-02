@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
+import Mainroutes from "./routes";
 
-import Customermain from "./pages/customer/Customermain";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div>
-      <Navbar />
+      <Mainroutes />
     </div>
   );
 }
