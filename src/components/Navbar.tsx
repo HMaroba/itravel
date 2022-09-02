@@ -38,7 +38,7 @@ const Navbar = () => {
             <span className="span1">Sign up</span>
           </Link>
         </div>
-
+      
         <Routes>
           <Route path="/login" element={<Login />} />{" "}
 

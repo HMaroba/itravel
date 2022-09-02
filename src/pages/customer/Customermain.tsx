@@ -14,11 +14,12 @@ import {
 import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import Topnav from "../../components/Topnav";
+import {useNavigate } from "react-router-dom";
 const Customermain = () => {
   
   return (
     <>
-      <Topnav />
+      <Topnav/>
       <Flex py="5rem" px="5rem" justifyContent="space-between">
         <Stack py="1rem">
           <Text
@@ -42,15 +43,13 @@ const Customermain = () => {
             <Tabs variant="soft-rounded" colorScheme="green">
               <TabList>
                 <Tab>Price</Tab>
-                <Tab>Location</Tab>
+                
               </TabList>
               <TabPanels>
                 <TabPanel>
                   <DriversCard />
                 </TabPanel>
-                <TabPanel>
-                  <p>two!</p>
-                </TabPanel>
+              
               </TabPanels>
             </Tabs>
           </Stack>
@@ -67,7 +66,11 @@ const Map = () => {
 };
 
 const DriversCard = () => {
+const navigate = useNavigate();
 
+const btnRequest =() =>{
+  navigate('/request');
+}
   return (
     <>
       <HStack>
@@ -78,7 +81,7 @@ const DriversCard = () => {
             <HiOutlineLocationMarker />
             <Text>Mokati School Bus</Text>
             <Flex>
-              <Button>Connect</Button>
+              <Button onClick={btnRequest}>Request</Button>
               <Button>Profile</Button>
               
             </Flex>

@@ -1,8 +1,11 @@
 import React from 'react'
-import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
+import {  Link } from "react-router-dom";
+import Navbar from './Navbar';
 const Home = () => {
   return (
+    
     <div>
+       
         <div className="cont">
           <div className="logo1">
           <h1 className="head"><img src="/Assets/Images/Frame.svg" className="image4" alt="" />travel</h1>
