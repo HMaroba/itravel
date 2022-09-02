@@ -1,9 +1,11 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-
+import Navbar from "../../components/Navbar";
 const Register = () => {
   return (
+    <>
+    <Navbar/>
     <div className="cont">
       <Form className="form4">
         <h3 className="sign">Signup</h3>
@@ -75,6 +77,7 @@ const Register = () => {
       </Form>
       <img src="/Assets/Images/signupimg.svg" className="image123" alt="" />
     </div>
+    </>
   );
 };
 

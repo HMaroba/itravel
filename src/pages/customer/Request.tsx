@@ -2,10 +2,12 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { InputGroup } from "react-bootstrap";
+import Topnav from "../../components/Topnav";
 
 const Request = () => {
   return (
-    <div>
+    <>
+    <Topnav/>
       <div className="cont">
         <Form className="form2">
           <p className="send">Send Request Bus</p>
@@ -80,7 +82,7 @@ const Request = () => {
         </Form>
         <img src="/Assets/Images/request.svg" className="image12" alt="" />
       </div>
-    </div>
+    </>
   );
 };
 

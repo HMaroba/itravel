@@ -10,6 +10,7 @@ import {
   TabPanels,
   Tabs,
   Text,
+  Box,
 } from "@chakra-ui/react";
 import React from "react";
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -37,10 +38,10 @@ const Customermain = () => {
             lineHeight="23px"
             color=" #6B6F7B"
           >
-            3 results 8 August 22{" "}
+            3 results 8 August 22
           </Text>
           <Stack>
-            <Tabs variant="soft-rounded" colorScheme="green">
+            <Tabs variant="outlined" colorScheme="green">
               <TabList>
                 <Tab>Price</Tab>
                 
@@ -73,18 +74,28 @@ const btnRequest =() =>{
 }
   return (
     <>
-      <HStack>
-        <Avatar name="Sasuke Uchiha" src="https://bit.ly/broken-link" />
+      <HStack
+        py="1rem"
+        shadow="md"
+        px="10rem"
+        display="flex"
+        spacing="2rem"
+        justifyContent="space-between"
+      >
+        <Box>
+          <Avatar name="Tlotliso Mokati" src="https://bit.ly/broken-link" />
+        </Box>
         <Stack>
           <Text>Mokati School Bus</Text>
           <Stack>
             <HiOutlineLocationMarker />
             <Text>Mokati School Bus</Text>
-            <Flex>
-              <Button onClick={btnRequest}>Request</Button>
-              <Button>Profile</Button>
-              
-            </Flex>
+
+            <HStack spacing="1rem">
+              <Button bg="#2B67F6" onClick={btnRequest}>Connect</Button>
+              <Button bg="green.100">Profile</Button>
+            </HStack>
+
           </Stack>
         </Stack>
       </HStack>
