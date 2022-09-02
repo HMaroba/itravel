@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [confirm, setConfirm] = useState<string>("");
+  const [error, setError] = useState<string>("");
+
   return (
     <div className="cont">
       <Form className="form1">
@@ -13,7 +18,7 @@ const Register = () => {
             type="text"
             className="formcontrol"
             placeholder="Enter Username"
-            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
         </Form.Group>
 
@@ -22,25 +27,30 @@ const Register = () => {
             type="number"
             className="formcontrol"
             placeholder="Enter Contact Number"
-            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Control
             type="email"
             className="formcontrol"
-            placeholder="Enter Email Address"
-            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-          <Form.Control type="date" className="formcontrol" 
-           style={{color: " #1340DE",border: "1px solid #2B67F6"}}
+          <Form.Control
+            type="date"
+            className="formcontrol"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Select aria-label="Default select example"  style={{color: " #1340DE",border: "1px solid #2B67F6"}}>
-            
+          <Form.Select
+            aria-label="Default select example"
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
+          >
             <option className="formcontrol">Choose Gender</option>
             <option value="1">Female</option>
             <option value="2">Male</option>
@@ -53,7 +63,7 @@ const Register = () => {
             type="number"
             className="formcontrol"
             placeholder="Enter Location"
-            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -61,7 +71,9 @@ const Register = () => {
             type="password"
             className="formcontrol"
             placeholder="Enter Password"
-            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
@@ -69,7 +81,9 @@ const Register = () => {
             type="password"
             className="formcontrol"
             placeholder="Confirm Password"
-            style={{color: " #1340DE",border: "1px solid #2B67F6"}}
+            value={confirm}
+            onChange={(e) => setConfirm(e.target.value)}
+            style={{ color: " #1340DE", border: "1px solid #2B67F6" }}
           />
         </Form.Group>
 
@@ -81,6 +95,7 @@ const Register = () => {
         <p className="forgot-password text-right">
           Already Registered <Link to={"/login"}>login</Link>
         </p>
+        {error}
       </Form>
       <img src="/Assets/Images/signupimg.svg" className="image123" alt="" />
     </div>
