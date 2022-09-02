@@ -7,7 +7,7 @@ const Register = () => {
   const [password, setPassword] = useState<string>("");
   const [confirm, setConfirm] = useState<string>("");
   const [error, setError] = useState<string>("");
-
+ 
   return (
     <div className="cont">
       <Form className="form1">
