@@ -1,19 +1,12 @@
 import React from "react";
 import "./App.css";
-import { config } from "./config/firebase";
-
-import Customermain from "./pages/customer/Customermain";
-import Navbar from "./components/Navbar";
-
-const { initializeApp } = require("firebase/app");
-const cors = require("cors");
-initializeApp(config.firebaseConfig);
-
-
+import Mainroutes from "./routes";
 function App() {
   return (
     <div>
-      <Navbar />
+
+      <Mainroutes />
+
     </div>
   );
 }

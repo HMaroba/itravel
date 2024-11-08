@@ -168,7 +168,7 @@ height: 400px;
   color: white;
 }
 .link2{
-  margin-left: 300px;
+  margin-left: 360px;
   margin-right: 20px;
   text-decoration: none;
   color: blue;
@@ -201,7 +201,7 @@ height: 400px;
   margin-bottom: 40px;
 }
 .links{
-  margin-left: 500px;
+  margin-left: 600px;
   margin-top: 20px;
 }
 .form1 {
@@ -224,7 +224,7 @@ color: #2B67F6;
 }
 .start{
   margin-top: 30px;
-  font-family: 'Rounded Mplus 1c Bold';
+  font-family: 'Rubik';
 font-style: normal;
 font-weight: 700;
 font-size: 20px;
@@ -278,6 +278,6 @@ height: 114px;
 }
 .form4 {
   margin-top: 50px;
-  margin-left: 400px;
+  margin-left: 150px;
 }
 

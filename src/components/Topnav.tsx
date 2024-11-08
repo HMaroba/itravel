@@ -5,6 +5,7 @@ import {
   InputLeftElement,
   InputRightElement,
   Link,
+  Button,
 } from "@chakra-ui/react";
 import React from "react";
 import {
@@ -13,7 +14,7 @@ import {
   HiOutlineBell,
   HiOutlineHeart,
 } from "react-icons/hi";
-import { Button } from "react-bootstrap";
+
 import Profile from "./Profile";
 
 const Topnav = () => {
@@ -52,25 +53,15 @@ const Topnav = () => {
               py="1.5rem"
               px="2rem"
               children={
-                <Button>
-                  <HiOutlineSearch color="green.500" />
+                <Button bg="#090C9B">
+                  <HiOutlineSearch />
                 </Button>
               }
             />
           </InputGroup>
         </HStack>
 
-        <HStack spacing="2rem">
-          <Link>
-            <HiOutlineChatAlt fontSize="30px" color="#2B67F6" />
-          </Link>
-          <Link>
-            <HiOutlineBell fontSize="30px" color="#2B67F6" />
-          </Link>
-          <Link>
-            <HiOutlineHeart fontSize="30px" color="#2B67F6" />
-          </Link>
-        </HStack>
+   
 
         <HStack>
           <Profile />
